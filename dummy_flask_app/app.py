@@ -34,6 +34,10 @@ def search():
     else:
         return render_template("no_page.html")
 
+@app.route("/signup")
+def signup():
+    first_name = request.form['first-name']
+
 
 if __name__ == "__main__":
     app.run()
