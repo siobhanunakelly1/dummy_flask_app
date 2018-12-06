@@ -12,6 +12,10 @@ def hello():
 def about():
     return render_template("dummy_file.html")
 
+@app.route("/register")
+def register():
+    return render_template("register.html")
+
 @app.route("/search") 
 def search():
     text_box_value = request.GET['location']
