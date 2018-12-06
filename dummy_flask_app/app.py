@@ -14,8 +14,8 @@ def about():
 
 @app.route("/search") 
 def search():
-    text_box_value = request.GET['value']
-    if text_box_value == "London":
+    text_box_value = request.GET['text_box']
+    if text_box_value == "london":
         return render_template("london.html")
     if text_box_value == "Thailand":
         return render_template("thailand.html")
