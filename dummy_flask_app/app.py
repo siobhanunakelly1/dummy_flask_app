@@ -21,16 +21,18 @@ def search():
     text_box_value = request.form['text']
     if text_box_value == "london":
         return render_template("london.html")
-    if text_box_value == "Thailand":
+    if text_box_value == "thailand":
         return render_template("thailand.html")
-    if text_box_value == "Sydney":
+    if text_box_value == "sydney":
         return render_template("sydney.html")
-    if text_box_value == "NYC":
+    if text_box_value == "new york":
         return render_template("nyc.html")
-    if text_box_value == "Rome":
+    if text_box_value == "rome":
         return render_template("rome.html")
-    if text_box_value == "Toronto":
+    if text_box_value == "toronto":
         return render_template("toronto.html")
+    else:
+        return render_template("no_page.html")
 
 
 if __name__ == "__main__":
