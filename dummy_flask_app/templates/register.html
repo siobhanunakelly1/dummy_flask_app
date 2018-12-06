@@ -56,6 +56,11 @@
     <p>Please fill in the following details</p> 
   </div>
 
+  <form method="SUBMIT">
+    <input name="first_Name">
+    <input name="last_Name">
+</form>
+
   <form>
     <div>
       <label for="first-name">First Name:</label>
@@ -261,6 +266,6 @@
     </div>
 
     <div>
-      <input type="submit" value="Submit" onclick="signup()"/>
+        <li><a href="{{ url_for('success') }}">Register</a></li>
     </div>
   </form>  

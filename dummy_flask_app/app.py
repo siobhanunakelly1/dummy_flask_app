@@ -34,9 +34,11 @@ def search():
     else:
         return render_template("no_page.html")
 
-@app.route("/signup")
+@app.route("/", methods=['SUBMIT'])
 def signup():
-    first_name = request.form['first-name']
+    first_name = request.form['first_name']
+    last_name = request.form['last_name']
+    return render_template("success.html", first_name, last_name)
 
 
 if __name__ == "__main__":
