@@ -42,18 +42,10 @@
 					<li><a href="#">About</a></li>
 					<li><a href="#">Contact</a></li>
 
-          <li><a href="#">Select Location:
-          <select name="Location" id="Location">
-        <option value="London">London</option>
-        <option value="Thailand">Thailand</option>
-        <option value="Sydney">Sydney</option>
-        <option value="NYC">NYC</option>
-        <option value="Rome">Rome</option>
-        <option value="Toronto">Toronto</option>
-        </select>
+          <li><a href="#">Select Location <input type="text" name="location" id="location" placeholder="London" required />
           
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Search</a></li>
+					<li><a href="{{ url_for('search') }}">Submit</a></li>
 					<li><a href="#">Login</a></li>
 				</ul>
 			</div>
