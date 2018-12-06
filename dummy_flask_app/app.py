@@ -3,6 +3,8 @@ from  flask import Flask, render_template, request
 
 app = Flask(__name__)
 
+list_of_countries = ["london", "thailand", "sydney", "new york", "rome", "toronto"]
+
 @app.route("/") 
 def hello():
     return render_template("hello.html")
