@@ -16,9 +16,9 @@ def about():
 def register():
     return render_template("register.html")
 
-@app.route("/search") 
+@app.route('/', methods=['POST']) 
 def search():
-    text_box_value = request.GET['location']
+    text_box_value = request.form['text']
     if text_box_value == "london":
         return render_template("london.html")
     if text_box_value == "Thailand":
@@ -31,6 +31,7 @@ def search():
         return render_template("rome.html")
     if text_box_value == "Toronto":
         return render_template("toronto.html")
+
 
 if __name__ == "__main__":
     app.run()
